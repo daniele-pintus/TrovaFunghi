@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+    <LinearLayout
+    android:id="@+id/allFormsAuth"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/titleAuth"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10.0"
+            android:text="@string/action_sign_in"
+            android:textSize="@dimen/auth_title"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/marginBase"
+            android:background="@drawable/bkg_info_img"
+            />
+
+        <LinearLayout
+            android:id="@+id/allFormsAuthContainer"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70.0"
+            android:background="@drawable/deliner_forms_auth">
+
+            <trova.funghi.view.auth.FormSigninView
+                android:id="@+id/formSignin"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"/>
+
+            <trova.funghi.view.auth.FormSignupView
+                android:id="@+id/formSignup"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <trova.funghi.view.auth.FormSendPassworResetEmailView
+                android:id="@+id/formSendPasswordResetEmail"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/gotoSign"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_fb_photo_name"
+            android:maxLines="1"
+            android:textColor="@drawable/selector_auth_text_links"
+            android:textSize="@dimen/auth_txt_form"
+            android:text="/@Null"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="6.1"
+
+            />
+        <View android:layout_weight="0.4" android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/divider_auth_forms" android:layout_margin="@dimen/marginBase"/>
+        <TextView
+            android:id="@+id/gotoResePwd"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_fb_photo_name"
+            android:maxLines="1"
+            android:textColor="@drawable/selector_auth_text_links"
+            android:textSize="@dimen/auth_txt_form"
+            android:text="@string/lbl_title_send_pwd_reset_email"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="6.1"
+            />
+        <View android:layout_weight="0.4" android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/divider_auth_forms" android:layout_margin="@dimen/marginBase"/>
+        <Button
+            android:id="@+id/authAbort"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="@string/lbl_abort_authentication"
+            android:layout_weight="6.6"
+            android:layout_gravity="center"
+            style="@style/CustomButtonViewStyle"/>
+        <View android:layout_weight="0.4" android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/divider_auth_forms" android:layout_margin="@dimen/marginBase"/>
+    </LinearLayout>
+    <trova.funghi.widget.SplashscreenLoadingBar
+        android:id="@+id/authProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+</merge>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      tools:context="trova.funghi.ProfileActivity">
+    <item
+        android:id="@+id/act_edit"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/icn_edit_24w"
+        android:visible="true"
+        android:enabled="true"
+        android:title="@string/mprofile_edit"
+        android:titleCondensed="@string/mprofile_edit"
+        />
+</menu>

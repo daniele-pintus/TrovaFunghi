@@ -1,0 +1,37 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_main_margin">2dp</dimen>
+    <!-- text -->
+    <dimen name="alltxtsize">14sp</dimen>
+    <dimen name="splashscreen_txtsize">20sp</dimen>
+    <dimen name="titleotherstxtsize">16sp</dimen>
+    <dimen name="grouptxtsize">16sp</dimen>
+    <dimen name="groupitemtxtsize">14sp</dimen>
+    <dimen name="dim_fb_photo_name">12sp</dimen>
+    <dimen name="auth_txt_form">18sp</dimen>
+    <dimen name="auth_btn_form">18sp</dimen>
+    <dimen name="auth_title">20sp</dimen>
+    <dimen name="lbl_min_size">12sp</dimen>
+
+    <dimen name="groupHeight">30dp</dimen>
+    <!-- paddings -->
+    <dimen name="basePadding">5dp</dimen>
+    <dimen name="btn_menu_paddings">15dp</dimen>
+    <dimen name="x_itemlist_paddings">2dp</dimen>
+
+    <!-- width and height of images and text view in itemlistview single item -->
+    <dimen name="minWidth">50dp</dimen>
+    <dimen name="minHeight">50dp</dimen>
+
+    <dimen name="marginBase">5dp</dimen>
+    <dimen name="margin_fb_photo_name">15dp</dimen>
+
+    <dimen name="min_height_bkg_searchview">10dp</dimen>
+
+    <dimen name="min_width_toggle_selector">5dp</dimen>
+
+</resources>

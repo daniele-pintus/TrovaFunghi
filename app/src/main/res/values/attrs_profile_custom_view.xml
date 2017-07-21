@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="ProfileContainerCustomView">
+        <attr name="disabledComponents" format="boolean"/>
+    </declare-styleable>
+</resources>

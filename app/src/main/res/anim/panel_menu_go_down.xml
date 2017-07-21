@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:duration="600" android:interpolator="@android:anim/accelerate_decelerate_interpolator">
+
+    <translate
+        android:toYDelta="90%p"
+        />
+
+ <!--
+<translate    
+    android:fromXDelta="0%p"
+    android:toXDelta="30%p"    
+    />
+
+    <set android:startOffset="300" android:duration="300" android:interpolator="@android:anim/accelerate_interpolator">
+       <translate  
+    android:fromXDelta="0%p"
+    android:toXDelta="-30%p"    
+    />
+    
+    </set>
+    
+    -->
+    
+</set>

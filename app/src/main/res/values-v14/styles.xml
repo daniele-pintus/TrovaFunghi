@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+         <item name="colorPrimary">@color/x_gray</item>
+
+         <!-- <item name="multiEditTextStyle">@style/MultiEditTextViewTheme</item>-->
+    </style>
+    
+    
+    
+    <style name="DialogLayoutTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/trasp</item>
+   	</style>
+
+    <style name="DialogLayoutTheme.MyDialog">
+        <item name="android:windowBackground">@drawable/bkg_alert_dialog</item>
+        <item name="android:padding">1dp</item>
+        <item name="colorPrimary">@color/x_black</item>
+        <item name="colorAccent">@color/x_black</item>
+        <item name="android:textColorPrimary">@color/x_black</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+    </style>
+</resources>

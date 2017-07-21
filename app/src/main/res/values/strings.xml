@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources[
+    <!ENTITY nbsp "&#160;"><!-- dcedc-->
+    ]>
+<resources>
+
+    <!-- FIREBASE -->
+    <!-- Necessario per inviare le notifiche dalla console per essere intercettati anche quando la app resta in background -->
+    <!--Se presente indica che il messaggio puÃ² essere recuperato via background dalla app-->
+    <string name="firebase_notification_retrive_bkg">GAFB_RETRIVE_BACKGROUND</string>
+    <!--&lt;!&ndash;Riporta il titolo della notifica&ndash;&gt;-->
+    <!--<string name="firebase_notification_retrive_bkg_title">GAFB_RETRIVE_BACKGROUND_TITLE</string>-->
+    <!--&lt;!&ndash;Riporta il body della notifica&ndash;&gt;-->
+    <!--<string name="firebase_notification_retrive_bkg_body">GAFB_RETRIVE_BACKGROUND_BODY</string>-->
+    <!--&lt;!&ndash;Riporta il primarykey della notifica&ndash;&gt;-->
+    <!--<string name="firebase_notification_retrive_bkg_pk">GAFB_RETRIVE_BACKGROUND_PK</string>-->
+
+    <string name="dummy_txt">- - -</string>
+
+    <string name="app_name">Trova Funghi</string>
+    <string name="msg_presentetion">Benvenuto %1$s %2$s</string>
+
+    <string name="none">- - - </string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">Loading...</string>
+    <string name="dummy_info">Trova Funghi</string>
+
+
+    <!-- Messaggi di errore o notifiche utente -->
+    <string name="msg_usr_no_application_found_to_solve_request">Nessuna applicazione trovata per risolvere la richiesta</string>
+    <string name="msg_usr_firebase_configurations_success">Configurazioni aggiornate</string>
+    <string name="msg_usr_firebase_configurations_failure">Configurazioni non aggiornate</string>
+    <!-- Authentication AREA-->
+    <string name="title_activity_authentication">Autenticazione</string>
+
+    <!-- Strings related to login -->
+    <string name="lbl_link_signup">Effettua una nuova registrazione</string>
+    <string name="lbl_link_signin">Accedi con un account esistente</string>
+    <string name="lbl_title_sign_in">Accesso con account esistente</string>
+    <string name="lbl_title_sign_out">Disconnessione</string>
+    <string name="lbl_title_sign_up">Registrazione nuovo account</string>
+    <string name="lbl_title_send_pwd_reset_email">Dimenticata password</string>
+    <string name="lbl_abort_authentication">Chiudi applicazione</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Accedi</string>
+    <string name="action_sign_out">Disconnetti</string>
+    <string name="action_sign_up">Registrati</string>
+    <string name="action_sign_reset">Pulisci tutto</string>
+    <string name="action_send_password_reset_email">Richiedi email per nuova password</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="prompt_hint_nome">Il tuo nome</string>
+    <string name="prompt_hint_email_contact">Email di contatto(se vuota utilizzeremo quella dell\'account)</string>
+    <string name="prompt_hint_provincia">Sigla provincia</string>
+    <string name="prompt_hint_comune">Comune</string>
+    <string name="prompt_hint_others">Cerchi anche...</string>
+    <string name="prompt_hint_birthdate">Anno di nascita. Esempio: 1975</string>
+
+    <string name="error_invalid_email">Email non valida</string>
+    <string name="error_invalid_password">La Password deve essere almeno di 8 caratteri</string>
+    <string name="error_incorrect_password">Password non corretta</string>
+    <string name="error_email_field_required">Email obbligatoria</string>
+    <string name="error_password_field_required">Password obbligatoria</string>
+    <string name="error_provincia_field_required">Selezionare una Provincia dalla lista</string>
+    <string name="error_comune_field_required">Selezionare un Comune dalla lista</string>
+    <string name="error_nomealias_field_required">Nome obbligatorio</string>
+    <string name="error_birthdate_field_required">Anno di nascita obbligatorio</string>
+
+    <string name="msg_signout_ok">ATTENZIONE:\nDisconnesso con successo!\nL\'applicazione verrà chiusa.</string>
+    <string name="msg_signout_ko">ATTENZIONE:\nDisconnessione non riuscita.\nRiprovare grazie.</string>
+    <string name="msg_signin_ok">Autenticazione effettuata con successo</string>
+    <string name="msg_send_password_reset_email_ok">Abbiamo spedito al tuo indirizzo %1$s una email per reimpostare la tua password</string>
+    <string name="msg_send_verify_email">Ti abbiamo spedito una email per la verifica della tua registrazione.\nTi preghiamo di completare la registrazione facendo click sul link.\nGrazie</string>
+    <string name="msg_signup_ok">Registrazione effettuata con successo</string>
+    <string name="hello_world">Benvenuto utente: %1$s - UID: %2$s Ruolo: %3$s</string>
+    <string name="msg_email_is_not_verifyed">Il suo account non è ancora attivo.\nPer attivarlo seguire le istruzioni presenti nella email di verifica account che le è stata inviata.\nDopo aver effettuato la verifica, riprovi ad effettuare il login.\nQualora non vi sia giunta l\'email di verifica oppure sia scaduta, rieffettuare la login in modo che le verrà rispediata una nuova email di verifica.\nGrazie.</string>
+    <string name="msg_alert_dialog_title">ATTENZIONE:</string>
+
+
+    <!-- Eccezioni dovute alle operazioni di autenticazione -->
+    <string name="fb_ex_signin_password">La password non è corretta</string>
+    <string name="fb_ex_signin_user">La user non è corretta oppure l\'account potrebbe essere disattivato</string>
+    <string name="fb_ex_signup_password">La password deve essere almeno di 8 caratteri</string>
+    <string name="fb_ex_signup_user">Formato Email non corretto</string>
+    <string name="fb_ex_signup_user_collision">ATTENZIONE: l\'Email inserita risulta già associata ad un utente</string>
+    <string name="fb_ex_send_password_reset_email_user">La user inserita non è corretta</string>
+
+    <string name="err_generic">Qualcosa è andata storta!\nControllare i dati e nel caso riprovare.\nGrazie.</string>
+    <string name="err_reload_user">Non siamo riusciti a recuperare i tuoi dati.\nProva a rieffettuare l\'accesso o l\'operazione che stavi eseguendo.\nGrazie.</string>
+    <string name="err_user_no_more_logged">Accesso negato!\nRieffettuare la login.\nGrazie.</string>
+
+    <!-- Area menu -->
+    <string name="mhome_esci">Esci</string>
+    <string name="mhome_profilo">Il tuo profilo</string>
+    <string name="mhome_disconnect">Disconnetti</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="mprofile_edit">Attiva modalità modifica</string>
+    <string name="mprofile_confirm">Salva modifiche</string>
+    <string name="mprofile_drop_account">Elimina Account</string>
+
+
+    <!--Area Profile -->
+    <string name="msg_updated_ok">Profilo modificato!</string>
+    <string name="lbl_profile_username">Username</string>
+    <string name="lbl_profile_nome">Nome</string>
+    <string name="lbl_profile_birthDate">Anno di nascita</string>
+    <string name="lbl_profile_pref_corsi">Area di preferenza dei corsi:</string>
+    <string name="lbl_profile_sigla_prov">Sigla provincia</string>
+    <string name="lbl_profile_comune">Comune</string>
+    <string name="lbl_profile_pref_funghi">Preferenze funghi da cercare:</string>
+
+    <string name="lbl_btn_drop_account">Elimina</string>
+    <string name="lbl_msg_drop_account">Davvero desideri elimanare il tuo Account?</string>
+
+
+</resources>

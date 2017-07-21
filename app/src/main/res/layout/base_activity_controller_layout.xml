@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_margin="@dimen/activity_main_margin"
+              android:background="@drawable/bkg_main"
+              android:orientation="vertical"
+              android:id="@+id/container"
+              tools:context=".BaseActivityController">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bkg_toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:divider="@drawable/divider_info"
+        android:dividerPadding="15dp"
+        android:showDividers="middle"
+        android:padding="0dp"
+        >
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/errorMsgs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:text="@string/hello_world"/>
+        <trova.funghi.widget.CustomButtonView
+            android:layout_margin="10dp"
+            android:id="@+id/signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/action_sign_out"/>
+    </LinearLayout>
+
+    <trova.funghi.widget.SplashscreenLoadingBar
+        android:id="@+id/login_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+</RelativeLayout>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <declare-styleable name="MultiEditTextView">
+        <attr name="bg_layout" format="reference|string" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ContainerFormsView">
+        <attr name="authentication_mode" format="enum">
+            <enum name="signin" value="0"></enum>
+            <enum name="signup" value="1"></enum>
+        </attr>
+    </declare-styleable>
+</resources>

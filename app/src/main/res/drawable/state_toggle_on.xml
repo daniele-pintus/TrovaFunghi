@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@android:drawable/ic_menu_delete" android:gravity="center"/>
+    <item android:gravity="center" android:top="40dp">
+        <shape android:shape="rectangle" android:innerRadius="5dp">
+            <corners android:radius="10dp"/>
+            <solid android:color="@color/x_b1"/>
+            <padding android:left="5dp" android:right="5dp"></padding>
+            <stroke android:color="@color/x_black" android:width="1dp"></stroke>
+        </shape>
+    </item>
+
+</layer-list>

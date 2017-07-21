@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/bkg_main"
+    android:paddingBottom="@dimen/basePadding"
+    android:paddingLeft="@dimen/basePadding"
+    android:paddingRight="@dimen/basePadding"
+    android:paddingTop="@dimen/basePadding"
+    tools:context="trova.funghi.HomeActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/x_blue"
+        android:background="@drawable/bkg_toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/presentation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Benvenuto"
+            android:textColor="@color/x_blue"
+            style="@style/CustomItemTextViewStyle"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:id="@+id/view_terminator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@drawable/divider_auth_forms" android:layout_margin="@dimen/marginBase"/>
+    </LinearLayout>
+    <trova.funghi.widget.SplashscreenLoadingBar
+        android:id="@+id/authProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <color name="x_white">#FFFFFF</color>
+    <color name="x_black_overlay">#66000000</color>
+	<color name="x_yell">#f6b806</color>
+    <color name="x_red">#EE0000</color>
+    <color name="x_blue">#0000CC</color>
+    <color name="x_black">#000000</color>
+    <!--<color name="x_black_55">#8C000000</color>-->
+    <color name="x_black_55">#8C000000</color>
+    <color name="x_gray">#CACACA</color>
+    <color name="x_trasparent">#00000000</color>
+    <color name="x_shadow">#90CACACA</color>
+    <color name="x_shadow80">#80CACACA</color>
+    <color name="x_shadow40">#40CACACA</color>
+
+    <color name="x_shadow60_k">#99CACACA</color>
+    <color name="x_shadow90_k">#E6CACACA</color>
+
+    <color name="x_shadow_group_border">#20666666</color>
+    <color name="x_btn_border_pressed">#FFFFFF</color>
+    <color name="x_shadow_selected_menu_h">#EFEFEF</color>
+    <!-- <color name="shadow">#40CACACA</color> -->
+	<color name="x_o1">#FF9933</color>
+	<color name="x_o1_shadow90">#90FF9933</color>
+	<color name="x_o1_shadow70">#70FF9933</color>
+	<color name="x_o1_shadow40">#40FF9933</color>
+	<color name="x_o1_shadow20">#20FF9933</color>
+	
+	<color name="x_o2_shadow60_a">#66FFCC99</color>
+	<color name="x_o2_shadow60_b">#66FFCC00</color>
+	
+	<color name="x_b1">#7dc6e6</color>
+	<color name="x_b2">#7dbdd9</color>
+	<color name="x_b2_shadow90">#907dbdd9</color>
+    <color name="x_b2_shadow40">#667dbdd9</color>
+	<color name="x_b2_shadow30">#307dbdd9</color>
+	<color name="x_b2_shadowE1">#E17dbdd9</color>
+    <color name="x_b1_shadow43">#707dbdd9</color>
+    <color name="x_g2_shadow20">#33801e45</color>
+
+    <color name="x_g1">#9cf2c1</color>
+    <color name="x_g2">#c6efd7</color>
+
+
+	
+    <color name="x_shadowmenuconsole">#40AAAAAA</color>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- needed to declare in main-theme the style to apply for MultiEditTextView widget. It is defStyleAttr -->
+    <attr name="itemListViewStyle" format="reference" />
+    <attr name="customItemTextViewStyle" format="reference" />
+    <attr name="customButtonViewStyle" format="reference" />
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="colorPrimary">@color/x_gray</item>
+        <item name="colorAccent">@color/x_gray</item>
+
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="itemListViewStyle">@style/ItemListViewTheme</item>
+        <item name="customItemTextViewStyle">@style/CustomItemTextViewStyle</item>
+        <item name="customButtonViewStyle">@style/CustomButtonViewStyle</item>
+        <!-- <item name="android:background">@color/yell</item> -->
+        <item name="android:textSize">@dimen/alltxtsize</item>
+        <item name="android:textColor">@color/x_black</item>
+        <item name="android:textColorLink">@color/x_blue</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:colorPrimary" tools:targetApi="lollipop">@color/x_gray</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:expandableListViewStyle">@style/MyExpandableListView</item>
+        <item name="searchViewStyle">@style/AppSearchView</item>
+        <!--<item name="android:listDivider">@drawable/trasp</item>-->
+        <!--
+        <item name="windowActionBarOverlay">false</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="actionBarPopupTheme">@null</item>
+        -->
+    </style>
+
+    <style name="DialogLayoutTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/trasp</item>
+    </style>
+
+    <style name="DialogLayoutTheme.MyDialog">
+        <item name="android:windowBackground">@drawable/bkg_alert_dialog</item>
+        <item name="android:padding">1dp</item>
+        <item name="colorPrimary">@color/x_black</item>
+        <item name="colorAccent">@color/x_black</item>
+        <item name="android:textColorPrimary">@color/x_black</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+    </style>
+
+    <style name="MyExpandableListView" parent="@android:style/Widget.Holo.Light.ExpandableListView">
+        <item name="android:divider">@drawable/bkg_expandablelist_divider</item>
+        <!--<item name="android:listSelector">@drawable/expandablelist_selector</item>-->
+    </style>
+
+    <style name="AppSearchView" parent="@style/Widget.AppCompat.Light.SearchView">
+        <item name="queryBackground">@color/x_blue</item>
+        <item name="submitBackground">@color/x_blue</item>
+    </style>
+
+    <style name="ItemListViewTheme">
+        <item name="android:background">@color/x_trasparent</item>
+        <item name="android:padding">@dimen/x_itemlist_paddings</item>
+    </style>
+    <style name="CustomItemTextViewStyle">
+        <item name="android:background">@drawable/bkg_txt_imgtxtitemlist</item>
+        <item name="android:minHeight">@dimen/minHeight</item>
+        <item name="android:minWidth">@dimen/minWidth</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/auth_txt_form</item>
+    </style>
+
+    <style name="CustomButtonViewStyle">
+        <item name="android:background">@drawable/selector_btn_state</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/minHeight</item>
+        <item name="android:minWidth">@dimen/minWidth</item>
+        <item name="android:textColor">@color/x_black</item>
+        <item name="android:paddingLeft">@dimen/basePadding</item>
+        <item name="android:paddingRight">@dimen/basePadding</item>
+    </style>
+    
+    <style name="FullscreenTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="android:textColor">@color/x_black</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/bkg_gradient_linear_h</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+        <item name="android:textViewStyle">@style/AppBaseTheme</item>
+        <item name="android:colorAccent" tools:targetApi="lollipop">@color/x_red</item>
+        <item name="colorPrimary">@color/x_g2</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+</resources>

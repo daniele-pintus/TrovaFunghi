@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <!--se impostato a zero visualizza tutti gli album presenti ed deve anche essere l'unico valore. Altrimenti per visualizzare più album: 235947446549827,980878666,98934794-->
+        <key>albumsToView</key>
+        <value>0</value>
+    </entry>
+    <entry>
+        <!--impostare un id album-->
+        <key>albumEvidence</key>
+        <value>895021220642443</value>
+    </entry>
+    <entry>
+        <!-- Inserire un id della photo oppure il name della foto(deve essere contenuta nell album dichiarato in albumEvidence) ad es.: Cacio e pepe.....a la longarina-->
+        <key>photoEvidence</key>
+        <value>990790441065520</value>
+    </entry>
+</defaultsMap>

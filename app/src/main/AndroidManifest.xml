@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="trova.funghi">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name=".CoreApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/FullscreenTheme">
+        <activity
+            android:name=".SplashFullscreenActivity"
+            android:configChanges="keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/FullscreenTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!-- <activity -->
+        <!-- android:name=".BaseActivityController" -->
+        <!-- android:alwaysRetainTaskState="true" -->
+        <!-- android:label="@string/app_name" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:screenOrientation="sensorPortrait" -->
+        <!-- android:stateNotNeeded="false" -->
+        <!-- android:theme="@style/AppTheme" -->
+        <!-- android:windowSoftInputMode="stateAlwaysHidden"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="trova.funghi.ENTRY_POINT_APP"/> -->
+
+
+        <!-- <category android:name="android.intent.category.DEFAULT"/> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".AuthenticationActivity"
+            android:label="@string/title_activity_authentication"
+            android:launchMode="standard"
+            android:screenOrientation="sensorPortrait"
+            android:stateNotNeeded="false"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="sensorPortrait"
+            android:stateNotNeeded="false"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="trova.funghi.ENTRY_POINT_APP"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/title_activity_profile"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="false"
+            android:screenOrientation="sensorPortrait"
+            android:stateNotNeeded="false"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+    </application>
+
+</manifest>
