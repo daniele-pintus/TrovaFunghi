@@ -16,6 +16,7 @@ import trova.funghi.authentication.AuthenticationEmailPasswordManager;
 import trova.funghi.authentication.OnAuthenticationListener;
 import trova.funghi.persistence.entity.ErrorEntity;
 import trova.funghi.persistence.entity.IEntity;
+import trova.funghi.persistence.entity.Mushroom;
 import trova.funghi.persistence.entity.UserProfile;
 import trova.funghi.persistence.entity.dao.OnDAOExecutionListener;
 import trova.funghi.persistence.entity.dao.UserProfileDAO;
@@ -59,6 +60,11 @@ public class HomeActivity extends AppCompatActivity {
             case R.id.mhome_view_profile:
                 Intent intent = new Intent(HomeActivity.this,ProfileActivity.class);
                 this.startActivity(intent);
+                overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.fade_out);
+                rtrnValue = true;
+                break;
+            case R.id.mhome_view_catalogue:
+                this.startActivity(new Intent(HomeActivity.this, MushroomDetailActivity.class));
                 overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.fade_out);
                 rtrnValue = true;
                 break;

@@ -97,6 +97,7 @@
     <string name="mhome_profilo">Il tuo profilo</string>
     <string name="mhome_disconnect">Disconnetti</string>
     <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_detail">MushroomDetailActivity</string>
     <string name="mprofile_edit">Attiva modalità modifica</string>
     <string name="mprofile_confirm">Salva modifiche</string>
     <string name="mprofile_drop_account">Elimina Account</string>
@@ -114,6 +115,15 @@
 
     <string name="lbl_btn_drop_account">Elimina</string>
     <string name="lbl_msg_drop_account">Davvero desideri elimanare il tuo Account?</string>
+
+    <!-- mushrooms detail labels -->
+    <string name="descriprion_label">Descrizione:</string>
+    <string name="sci_name_label">Nome scientifico:</string>
+    <string name="vul_name_label">Nome volgare:</string>
+    <string name="popularity_label">Quanto è ricercato:</string>
+    <string name="habitat_label">Habitat:</string>
+    <string name="edibility_label">Commestibilità:</string>
+    <string name="mhome_catalogue">Catalogo</string>
 
 
 </resources>

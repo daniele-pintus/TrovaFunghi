@@ -11,6 +11,17 @@
           android:visible="true"
           android:orderInCategory="1"
           android:menuCategory="container"/>
+
+    <item android:title="@string/mhome_catalogue"
+        android:id="@+id/mhome_view_catalogue"
+        android:enabled="true"
+        android:icon="@drawable/ic_dangerous"
+        android:titleCondensed="@string/mhome_catalogue"
+        app:showAsAction="always"
+        android:visible="true"
+        android:orderInCategory="1"
+        android:menuCategory="container"/>
+
     <item android:title="@string/mhome_disconnect"
           android:id="@+id/mhome_disconnect"
           android:enabled="true"

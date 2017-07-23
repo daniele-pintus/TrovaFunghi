@@ -64,9 +64,21 @@
                 <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ProfileActivity"
             android:label="@string/title_activity_profile"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="false"
+            android:screenOrientation="sensorPortrait"
+            android:stateNotNeeded="false"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity
+            android:name=".MushroomDetailActivity"
+            android:label="@string/title_activity_detail"
             android:launchMode="singleTask"
             android:alwaysRetainTaskState="false"
             android:screenOrientation="sensorPortrait"

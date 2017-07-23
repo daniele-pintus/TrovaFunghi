@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/app_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@color/x_blue"
+        android:background="@drawable/bkg_toolbar">
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10pt"
+        android:layout_gravity="center"
+        android:text="Agaricus arvensis"/>
+
+    <ImageView
+        android:id="@+id/detail_thumbnail"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/x_white"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    <TextView
+        android:id="@+id/sci_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:labelFor="@+id/sci_name"
+        android:text="@string/sci_name_label"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sci_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Agaricus arvensis" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/vul_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/vul_name"
+            android:text="@string/vul_name_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/vul_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Prataiolo" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/popularity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/popularity"
+            android:text="@string/popularity_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Molto" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/habitat_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/habitat"
+            android:text="@string/habitat_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/habitat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Primavera / autunno, nelle radure erbose dei boschi, prati o pascoli, su terreno concimato;" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/edibility_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/edibility"
+            android:text="@string/edibility_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/edibility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Commestibilità: Ottima. Sono preferibili gli esemplari giovani, con le lamelle ancora bianche" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/description_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:labelFor="@+id/description"
+            android:text="@string/descriprion_label"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Capello Fino a 20 cm di larghezza, a volte tuttavia raggiunge dimensioni enormi; inizialmente è chiuso a forma di uovo, poi si apre e diventa emisferico ed infine piano-convesso. Carnoso, bianco, un po' ocra/nocciola al centro; dapprima fioccoso, poi liscio. Cuticola nonasportabile. Al tocco vira al giallo (strofinare).
+Margine fioccoso per via dei residui di velo; Lamelle piuttosto fitte, fragili, libere. Dapprima bianche, poi bianco-sporco, infine brune e nerastre per via della sporata; Gambo Cilindrico, pieno e robusto, piede più largo. Di colore bianco, vira al giallo al tocco; Anello di colore bianco, ampio, dal tipico aspetto a ruota dentata, collocato in posizione elevata, vira al giallo se manipolato; Carne soda, di colore bianco;" />
+    </LinearLayout>
+
+</LinearLayout>
