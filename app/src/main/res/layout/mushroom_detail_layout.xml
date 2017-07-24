@@ -3,17 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp">
-
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/app_toolbar"
-        android:minHeight="?attr/actionBarSize"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:titleTextColor="@color/x_blue"
-        android:background="@drawable/bkg_toolbar">
-    </android.support.v7.widget.Toolbar>
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/detail_name"

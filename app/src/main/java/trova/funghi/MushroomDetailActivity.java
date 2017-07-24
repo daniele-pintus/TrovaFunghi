@@ -39,10 +39,11 @@ public class MushroomDetailActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "[onCreate]");
         super.onCreate(savedInstanceState);
 
+        this.fragment = prepareFragment(MushroomDetailActivity.this.currentTagFragment, null);
+
         flowController = new MushroomFlowController(getApplicationContext());
         flowController.setListener(new MushroomFlowControllerListenerImpl());
 
-        this.fragment = prepareFragment(MushroomDetailActivity.this.currentTagFragment, null);
 
         setContentView(R.layout.detail_container_layout);
 

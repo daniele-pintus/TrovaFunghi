@@ -32,7 +32,7 @@ public class MushroomDetailFragment extends IBaseController<Mushroom> {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Log.d(LOG_TAG,"[onCreateView]");
-        final View rootView = inflater.inflate(R.layout.fragment_profile, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_mushroom_detail, container, false);
         this.mushroomDetailView = (MushroomDetailView) rootView.findViewById(R.id.detail_container_custom);
         this.setHasOptionsMenu(true);
 

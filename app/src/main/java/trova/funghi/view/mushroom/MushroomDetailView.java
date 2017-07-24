@@ -2,6 +2,7 @@ package trova.funghi.view.mushroom;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -32,6 +33,8 @@ public class MushroomDetailView extends LinearLayout {
     private TextView popularityTextView;
     private ImageView thumbNailImageView;
 
+    boolean isImageFitToScreen;
+
     public MushroomDetailView(Context context) {
         super(context);
         init(context, null, 0);
@@ -60,6 +63,7 @@ public class MushroomDetailView extends LinearLayout {
         this.descriptionTextView = (TextView) findViewById(R.id.description);
         this.popularityTextView = (TextView) findViewById(R.id.popularity);
         this.thumbNailImageView = (ImageView) findViewById(R.id.detail_thumbnail);
+        thumbNailImageView.setOnClickListener(new ImageOnClickListener());
     }
 
     public void setMushroom(Mushroom mMushroom){
@@ -74,4 +78,20 @@ public class MushroomDetailView extends LinearLayout {
         popularityTextView.setText(mushroom.getPopularity());
         Picasso.with(context).load(mMushroom.getThumbNailUri()).fit().centerCrop().into(thumbNailImageView);
     }
+
+    private class ImageOnClickListener implements View.OnClickListener {
+        @Override
+        public void onClick(View v) {
+            if(isImageFitToScreen) {
+                isImageFitToScreen=false;
+                thumbNailImageView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                thumbNailImageView.setAdjustViewBounds(true);
+            }else{
+                isImageFitToScreen=true;
+                thumbNailImageView.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT));
+                thumbNailImageView.setScaleType(ImageView.ScaleType.FIT_XY);
+            }
+        }
+    }
+
 }

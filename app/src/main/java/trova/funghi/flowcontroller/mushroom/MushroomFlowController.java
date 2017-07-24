@@ -49,8 +49,6 @@ public class MushroomFlowController {
         mushroom.setVulName("Prataiolo");
 
         buildThumbnailUri();
-
-        listener.onMushroomDataLoaded(mushroom);
     }
 
     private void buildThumbnailUri() {
@@ -61,6 +59,7 @@ public class MushroomFlowController {
             public void onSuccess(Uri uri) {
                 Log.d(LOG_TAG, "[buildThumbnailUri] Loading image success: " + uri.toString());
                 mushroom.setThumbNailUri(uri.toString());
+                listener.onMushroomDataLoaded(mushroom);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
