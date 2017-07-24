@@ -77,6 +77,17 @@
         </activity>
 
         <activity
+            android:name=".MushroomCatalogueActivity"
+            android:label="@string/title_activity_catalogue"
+            android:launchMode="singleTask"
+            android:alwaysRetainTaskState="false"
+            android:screenOrientation="sensorPortrait"
+            android:stateNotNeeded="false"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+
+        <activity
             android:name=".MushroomDetailActivity"
             android:label="@string/title_activity_detail"
             android:launchMode="singleTask"

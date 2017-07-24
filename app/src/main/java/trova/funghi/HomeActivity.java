@@ -64,7 +64,7 @@ public class HomeActivity extends AppCompatActivity {
                 rtrnValue = true;
                 break;
             case R.id.mhome_view_catalogue:
-                this.startActivity(new Intent(HomeActivity.this, MushroomDetailActivity.class));
+                this.startActivity(new Intent(HomeActivity.this, MushroomCatalogueActivity.class));
                 overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.fade_out);
                 rtrnValue = true;
                 break;

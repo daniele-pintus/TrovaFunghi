@@ -10,6 +10,9 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import trova.funghi.persistence.entity.Mushroom;
 
 /**
@@ -29,7 +32,8 @@ public class MushroomFlowController {
     private StorageReference storageRef;
 
     // MODEL
-    Mushroom mushroom;
+    private Mushroom mushroom;
+    private List<Mushroom> mushroomList = new ArrayList<>();
 
     public MushroomFlowController(Context context){
         this.context = context;
@@ -48,18 +52,40 @@ public class MushroomFlowController {
         mushroom.setSciName("Agaricus arvensis");
         mushroom.setVulName("Prataiolo");
 
-        buildThumbnailUri();
+        buildThumbnailUri(mushroom);
+
+        listener.onMushroomDataLoaded(mushroom);
     }
 
-    private void buildThumbnailUri() {
+    public void loadMushroomList(){
+
+        for(int i=0; i<5; i++) {
+            Mushroom mushroom = new Mushroom();
+
+            mushroom.setDescription("bla bla bla bla");
+            mushroom.setEdibility("Ottima");
+            mushroom.setHabitat("habitat");
+            mushroom.setId("0001");
+            mushroom.setPopularity("Alta");
+            mushroom.setSciName("Agaricus arvensis - "+i);
+            mushroom.setVulName("Prataiolo - " + i);
+
+            buildThumbnailUri(mushroom);
+
+            mushroomList.add(mushroom);
+        }
+
+        listener.onMushroomListDataLoaded(mushroomList);
+    }
+
+    private void buildThumbnailUri(final Mushroom mMushroom) {
         StorageReference storageImg = storageRef.child("images/mushrooms/"+mushroom.getId()+".jpg");
 
         storageImg.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
             @Override
             public void onSuccess(Uri uri) {
                 Log.d(LOG_TAG, "[buildThumbnailUri] Loading image success: " + uri.toString());
-                mushroom.setThumbNailUri(uri.toString());
-                listener.onMushroomDataLoaded(mushroom);
+                mMushroom.setThumbNailUri(uri.toString());
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
@@ -76,5 +102,7 @@ public class MushroomFlowController {
 
     public interface MushroomFlowControllerListener {
         public void onMushroomDataLoaded(Mushroom mushroom);
+
+        public void onMushroomListDataLoaded(List<Mushroom> mushroomList);
     }
 }

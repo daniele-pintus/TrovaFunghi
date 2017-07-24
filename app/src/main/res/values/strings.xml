@@ -97,7 +97,8 @@
     <string name="mhome_profilo">Il tuo profilo</string>
     <string name="mhome_disconnect">Disconnetti</string>
     <string name="title_activity_profile">ProfileActivity</string>
-    <string name="title_activity_detail">MushroomDetailActivity</string>
+    <string name="title_activity_detail">Dettaglio</string>
+    <string name="title_activity_catalogue">Catalogo Funghi</string>
     <string name="mprofile_edit">Attiva modalità modifica</string>
     <string name="mprofile_confirm">Salva modifiche</string>
     <string name="mprofile_drop_account">Elimina Account</string>
@@ -124,6 +125,9 @@
     <string name="habitat_label">Habitat:</string>
     <string name="edibility_label">Commestibilità:</string>
     <string name="mhome_catalogue">Catalogo</string>
+    <string name="filter_popular_label">I più ricercati</string>
+    <string name="filter_similar_label">Le somiglianze</string>
+    <string name="filter_alpha_label">Ordine alfabetico</string>
 
 
 </resources>
