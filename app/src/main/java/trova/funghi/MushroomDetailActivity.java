@@ -41,13 +41,12 @@ public class MushroomDetailActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "[onCreate]");
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.detail_container_layout);
+
         this.fragment = prepareFragment(MushroomDetailActivity.this.currentTagFragment, null);
 
         flowController = new MushroomFlowController(getApplicationContext());
         flowController.setListener(new MushroomFlowControllerListenerImpl());
-
-
-        setContentView(R.layout.detail_container_layout);
 
         appToolbar = (Toolbar) findViewById(R.id.app_toolbar);
         setSupportActionBar(appToolbar);

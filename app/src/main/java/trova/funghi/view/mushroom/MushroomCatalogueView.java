@@ -26,7 +26,7 @@ public class MushroomCatalogueView extends LinearLayout {
     private List<Mushroom> mushroomList;
 
     // VIEWS
-    ListView catalogueListView;
+    android.support.v7.widget.RecyclerView catalogueRecyclerView;
 
     public MushroomCatalogueView(Context context) {
         super(context);
@@ -48,11 +48,11 @@ public class MushroomCatalogueView extends LinearLayout {
 
         inflate(context, R.layout.mushroom_catalogue_layout, this);
 
-        catalogueListView = (ListView) findViewById(R.id.catalogue_list);
+        // catalogueListView = (ListView) findViewById(R.id.catalogue_list);
 
-        MushroomListAdapter adapter = new MushroomListAdapter(context, R.layout.mushroom_list_item_layout, mushroomList);
+        // MushroomListAdapter adapter = new MushroomListAdapter(context, R.layout.mushroom_list_item_layout, mushroomList);
 
-        catalogueListView.setAdapter(adapter);
+        // catalogueListView.setAdapter(adapter);
     }
 
     public void setMushroomList(List<Mushroom> mushroomList) {

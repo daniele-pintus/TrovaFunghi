@@ -38,13 +38,12 @@ public class MushroomCatalogueActivity extends AppCompatActivity {
         Log.d(LOG_TAG, "[onCreate]");
         super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.catalogue_container_layout);
+
         this.fragment = prepareFragment(MushroomCatalogueActivity.this.currentTagFragment, null);
 
         flowController = new MushroomFlowController(getApplicationContext());
         flowController.setListener(new MushroomCatalogueActivity.MushroomFlowControllerListenerImpl());
-
-
-        setContentView(R.layout.catalogue_container_layout);
 
         appToolbar = (Toolbar) findViewById(R.id.app_toolbar);
         setSupportActionBar(appToolbar);
@@ -65,7 +64,7 @@ public class MushroomCatalogueActivity extends AppCompatActivity {
         }else{
             baseController = new MushroomCatalogueFragment();
             currentTagFragment = baseController.getTagFragment();
-            ft.add(R.id.catalogue_container, baseController, currentTagFragment).commit();
+            ft.add(R.id.catalogue_body, baseController, currentTagFragment).commit();
         }
         return baseController;
     }
